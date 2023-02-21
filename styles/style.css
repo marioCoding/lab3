@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  position: relative;
+  height: 100px;
+  flex-direction: row-reverse;
+}
+.logo {
+  border-radius: 100%;
+}
+.title {
+  font-family: 'Courgette', cursive;
+  font-size: 30px;
+  color: rgb(158, 147, 132);
+  margin: auto;
+  padding-left: 35px;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+li {
+  list-style: none;
+  margin: 10px;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Section 1*/
+.section1 {
+  padding: 15px;
+  background-color: azure;
+  height: 500px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #000;
+}
+.box {
+  height: 150px;
+  width: 150px;
+  background-color: aquamarine;
+  transition: all 2s ease-out;
+}
+#myButton {
+  padding: 5px 10px;
+  border-radius: 20px;
+  border-style: none;
+  background-color:rgb(226, 228, 227);
+}
+.move-box {
+  transform: translateX('300px');
+  background-color: blue;
+}
+
+/* Section 2 */
+.section2 {
+  background-color:lemonchiffon;
+  height: 300px;
+  border-bottom: #000 solid 1px;
+}
+
+/* Footer */
+footer {
+  padding:15px;
+  background-color: aliceblue;
+  text-align: center;
+}
+
+/* Animations */
+@keyframes box-animation {
+  0% {
+    transform: translateX(-100%);
+    background-color: rgb(71, 194, 153)
+  }
+  50% {
+    background-color:rgb(35, 96, 75)
+  }
+  100% {
+    transform: translateX(0);
+    background-color: aquamarine;
+  }
+}
