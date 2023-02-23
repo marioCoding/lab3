@@ -9,59 +9,42 @@
 
 /* Header */
 header {
+  text-align: center;
+  height: 75px;
   display: flex;
-  justify-content: space-between;
-  align-content: center;
-  position: relative;
-  height: 100px;
-  flex-direction: row-reverse;
-}
-.logo {
-  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
 }
 .title {
   font-family: 'Courgette', cursive;
   font-size: 30px;
-  color: rgb(158, 147, 132);
+  color: darkslategray;
   margin: auto;
   padding-left: 35px;
-}
-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-li {
-  list-style: none;
-  margin: 10px;
-}
-a {
-  text-decoration: none;
-  color: #000;
+  text-align: center;
 }
 
 /* Section 1*/
 .section1 {
+  position: relative;
   padding: 15px;
   background-color: azure;
   height: 500px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #000;
+  border-top: #000 solid 1px;
+  border-bottom: #000 solid 1px;
 }
 .box {
   height: 150px;
   width: 150px;
+  position: absolute;
   background-color: aquamarine;
-  transition: all 2s ease-out;
+  top: 125px;
+  left: 15px;
+  border: #000 solid .1px;
 }
-#myButton {
+#btnMoveBox {
   padding: 5px 10px;
+  width: 100px;
   border-radius: 20px;
   border-style: none;
   background-color:rgb(226, 228, 227);
@@ -73,8 +56,17 @@ a {
 
 /* Section 2 */
 .section2 {
+  padding: 15px;
   background-color:lemonchiffon;
   height: 300px;
+  border-bottom: #000 solid 1px;
+}
+
+/* Section 3 */
+.section3 {
+  height: 300px;
+  padding: 15px;
+  background-color: rgb(248, 192, 192);
   border-bottom: #000 solid 1px;
 }
 
@@ -85,17 +77,23 @@ footer {
   text-align: center;
 }
 
-/* Animations */
-@keyframes box-animation {
-  0% {
-    transform: translateX(-100%);
-    background-color: rgb(71, 194, 153)
-  }
-  50% {
-    background-color:rgb(35, 96, 75)
-  }
-  100% {
-    transform: translateX(0);
-    background-color: aquamarine;
-  }
+/* Style for dotExercise.html */
+
+.dotExerciseBody {
+  margin: 0;
+  height: 100vh;
+}
+.dotTitle {
+  padding: 15px;
+}
+.linkToMainPage {
+  padding-left: 15px
+}
+.ball {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: blue;
+  opacity: 0;
+  transition: transform 1s;
 }
