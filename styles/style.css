@@ -82,6 +82,7 @@ footer {
 .dotExerciseBody {
   margin: 0;
   height: 100vh;
+  background-color: rgb(248, 192, 192);
 }
 .dotTitle {
   padding: 15px;
