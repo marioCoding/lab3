@@ -1,100 +1,101 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
 
 * {
-  margin: 0;
-  padding: 0;
-  font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
 }
 
 /* Header */
 header {
-  text-align: center;
-  height: 75px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    text-align: center;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .title {
-  font-family: 'Courgette', cursive;
-  font-size: 30px;
-  color: darkslategray;
-  margin: auto;
-  padding-left: 35px;
-  text-align: center;
+    font-family: "Courgette", cursive;
+    font-size: 30px;
+    color: darkslategray;
+    margin: auto;
+    padding-left: 35px;
+    text-align: center;
 }
 
 /* Section 1*/
 .section1 {
-  position: relative;
-  padding: 15px;
-  background-color: azure;
-  height: 500px;
-  border-top: #000 solid 1px;
-  border-bottom: #000 solid 1px;
+    position: relative;
+    padding: 15px;
+    background-color: azure;
+    height: 500px;
+    border-top: #000 solid 1px;
+    border-bottom: #000 solid 1px;
 }
 .box {
-  height: 150px;
-  width: 150px;
-  position: absolute;
-  background-color: aquamarine;
-  top: 125px;
-  left: 15px;
-  border: #000 solid .1px;
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    background-color: aquamarine;
+    top: 125px;
+    left: 15px;
+    border: #000 solid 0.1px;
 }
 #btnMoveBox {
-  padding: 5px 10px;
-  width: 100px;
-  border-radius: 20px;
-  border-style: none;
-  background-color:rgb(226, 228, 227);
+    padding: 5px 10px;
+    width: 100px;
+    border-radius: 20px;
+    border-style: none;
+    background-color: rgb(226, 228, 227);
 }
 .move-box {
-  transform: translateX('300px');
-  background-color: blue;
+    transform: translateX("300px");
+    background-color: blue;
 }
 
 /* Section 2 */
 .section2 {
-  padding: 15px;
-  background-color:lemonchiffon;
-  height: 300px;
-  border-bottom: #000 solid 1px;
+    padding: 15px;
+    background-color: lemonchiffon;
+    height: 300px;
+    border-bottom: #000 solid 1px;
 }
 
 /* Section 3 */
 .section3 {
-  height: 300px;
-  padding: 15px;
-  background-color: rgb(248, 192, 192);
-  border-bottom: #000 solid 1px;
+    height: 300px;
+    padding: 15px;
+    background-color: rgb(248, 192, 192);
+    border-bottom: #000 solid 1px;
 }
 
 /* Footer */
 footer {
-  padding:15px;
-  background-color: aliceblue;
-  text-align: center;
+    padding: 15px;
+    background-color: aliceblue;
+    text-align: center;
 }
 
 /* Style for dotExercise.html */
 
 .dotExerciseBody {
-  margin: 0;
-  height: 100vh;
-  background-color: rgb(248, 192, 192);
+    margin: 0;
+    height: 100vh;
+    background-color: rgb(248, 192, 192);
 }
 .dotTitle {
-  padding: 15px;
+    padding: 15px;
 }
 .linkToMainPage {
-  padding-left: 15px
+    padding-left: 15px;
 }
-.ball {
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  background-color: blue;
-  opacity: 0;
-  transition: transform 1s;
+.ball,
+#dot {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+    opacity: 0;
+    transition: all 1s;
 }
